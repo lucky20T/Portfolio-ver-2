@@ -1,4 +1,5 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import abstractImg from '../Asset/Art/Mysterious Abstract Terrain - Sci-Fi Moody Landscape Art.jpeg';
 import resumePdf from '../Asset/Resume.pdf';
 
@@ -10,7 +11,21 @@ const Hero = () => {
       
       <div className="container hero-container">
         <div className="hero-content">
-          <h4 className="hero-subtitle" data-aos="fade-up">Aspiring Game Developer • Unreal Engine • C++</h4>
+          <h4 className="hero-subtitle" data-aos="fade-up">
+            <TypeAnimation
+              sequence={[
+                'Aspiring Game Developer • Unreal Engine • C++',
+                2000,
+                'Aspiring Game Developer • 3D Artist • Blender',
+                2000,
+                'Aspiring Game Developer • Logic Designer',
+                2000
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </h4>
           <h1 className="hero-title" data-aos="fade-up" data-aos-delay="100">
             Building Worlds <br />
             <span className="gradient-text">One Frame</span> At A Time
