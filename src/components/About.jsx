@@ -1,4 +1,5 @@
 import React from 'react';
+import propic from '../Asset/propic/MainPropic.png';
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-image">
             <div className="image-wrapper">
-              <div className="placeholder-image gradient-text">V</div>
+              <img src={propic} alt="Vishal" className="profile-img" />
               <div className="image-border"></div>
             </div>
           </div>
