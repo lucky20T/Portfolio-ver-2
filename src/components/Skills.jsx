@@ -1,9 +1,18 @@
 import React from 'react';
 
 const skills = [
-  { name: "Frontend", items: ["React", "JavaScript (ES6+)", "HTML5/CSS3", "Next.js", "Tailwind"] },
-  { name: "Design", items: ["UI/UX Design", "Figma", "Game Design", "3D Modeling"] },
-  { name: "Tools", items: ["Git & GitHub", "Vite", "Firebase", "Zustand", "VS Code"] }
+  { 
+    name: "Game Development", 
+    items: ["C++", "Unreal Engine", "Blender", "FL Studio"] 
+  },
+  { 
+    name: "Web Technologies", 
+    items: ["React", "Vite", "JavaScript", "HTML5", "CSS3"] 
+  },
+  { 
+    name: "Design & Creative", 
+    items: ["UI/UX Design", "Vibe Coding", "Git", "GitHub"] 
+  }
 ];
 
 const Skills = () => {

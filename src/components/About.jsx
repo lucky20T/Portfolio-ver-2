@@ -13,30 +13,34 @@ const About = () => {
             </div>
           </div>
           <div className="about-content">
-            <h2 className="section-title">About <span className="gradient-text">Me</span></h2>
+            <h2 className="section-title">My <span className="gradient-text">Journey</span></h2>
             <p className="about-text">
-              I'm a passionate developer based in India, specializing in React.js and modern web technologies. 
-              My journey started with a fascination for how things work under the hood, which led me to the 
-              world of coding and game development.
+              I'm a multi-disciplinary creator with a singular vision: to become a world-class Game Developer. 
+              My expertise spans across <strong>C++</strong> and <strong>Unreal Engine</strong>, where I build the core mechanics of interactive experiences.
             </p>
             <p className="about-text">
-              I believe that great software is the perfect blend of logic and creativity. Whether it's 
-              optimizing a SaaS dashboard or designing a complex game mechanic, I strive for excellence 
-              in every pixel and line of code.
+              To bring my worlds to life, I leverage <strong>Blender</strong> for 3D modeling and <strong>FL Studio</strong> for immersive soundscapes. 
+              My background in web development (React, JavaScript) allows me to bridge the gap between 
+              interactive apps and high-fidelity gaming.
+            </p>
+            <p className="about-text">
+              I believe in "vibe coding"—the art of creating software that feels alive, intuitive, and 
+              aesthetically pleasing. Every line of code I write is a step toward building the next 
+              great digital adventure.
             </p>
             
             <div className="stats-grid">
               <div className="stat-card glass-card">
                 <h3>3+</h3>
-                <p>Years Exp.</p>
+                <p>Years Creative</p>
               </div>
               <div className="stat-card glass-card">
-                <h3>20+</h3>
+                <h3>15+</h3>
                 <p>Projects</p>
               </div>
               <div className="stat-card glass-card">
-                <h3>10+</h3>
-                <p>Clients</p>
+                <h3>100%</h3>
+                <p>Game Dev Focus</p>
               </div>
             </div>
           </div>

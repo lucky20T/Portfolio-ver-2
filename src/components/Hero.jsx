@@ -9,18 +9,18 @@ const Hero = () => {
       
       <div className="container hero-container">
         <div className="hero-content">
-          <h4 className="hero-subtitle">Frontend Developer & Game Designer</h4>
+          <h4 className="hero-subtitle">Future Game Developer & Web Enthusiast</h4>
           <h1 className="hero-title">
-            Crafting Digital <br />
-            <span className="gradient-text">Experiences</span> That Matter
+            Building Worlds <br />
+            <span className="gradient-text">One Frame</span> At A Time
           </h1>
           <p className="hero-description">
-            I build immersive web applications and interactive games with a focus on 
-            performance, aesthetics, and user-centric design.
+            I'm an aspiring Game Developer specializing in C++ and Unreal Engine, 
+            blending immersive storytelling with modern web technologies and 3D art.
           </p>
           <div className="hero-btns">
-            <a href="#projects" className="btn btn-primary">View My Work</a>
-            <a href="#contact" className="btn btn-outline">Let's Talk</a>
+            <a href="#projects" className="btn btn-primary">Explore My Universe</a>
+            <a href="#contact" className="btn btn-outline">Let's Collaborate</a>
           </div>
         </div>
         <div className="hero-visual">

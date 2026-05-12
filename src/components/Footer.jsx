@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-logo">
             <span className="gradient-text">VISHAL</span>
-            <p>Designing the future, one pixel at a time.</p>
+            <p>Aspiring Game Developer crafting immersive digital worlds.</p>
           </div>
           <div className="footer-links">
             <div className="link-group">
@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Vishal. All rights reserved.</p>
           <div className="made-with">
-            Made with <span>❤️</span> in India
+            Created with <span>Passion</span> for Gaming
           </div>
         </div>
       </div>
