@@ -577,6 +577,99 @@ img {
   color: var(--accent-tertiary);
 }
 
+/* Project Categories */
+.main-category {
+  margin-bottom: 4rem;
+}
+.sub-category {
+  margin-top: 3rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--glass-border);
+}
+.sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+}
+.sub-header-with-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.sub-header-with-link .sub-title {
+  margin-bottom: 0;
+}
+.gdd-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  background: rgba(99, 102, 241, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  transition: var(--transition);
+}
+.gdd-link:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Sound Cards */
+.sound-card {
+  height: 100%;
+}
+.audio-player-wrapper {
+  margin-top: auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.custom-audio {
+  width: 100%;
+  height: 32px;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.5);
+  opacity: 0.7;
+  transition: var(--transition);
+}
+.custom-audio:hover {
+  opacity: 1;
+}
+.audio-wave {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 30px;
+}
+.audio-wave span {
+  width: 3px;
+  background: var(--accent-primary);
+  border-radius: 10px;
+  animation: wave 1s infinite ease-in-out;
+}
+.audio-wave span:nth-child(1) { height: 15px; animation-delay: 0.1s; }
+.audio-wave span:nth-child(2) { height: 25px; animation-delay: 0.2s; }
+.audio-wave span:nth-child(3) { height: 10px; animation-delay: 0.3s; }
+.audio-wave span:nth-child(4) { height: 20px; animation-delay: 0.4s; }
+.audio-wave span:nth-child(5) { height: 15px; animation-delay: 0.5s; }
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.5); }
+}
+
+
 @media (max-width: 992px) {
   .hero-container {
     grid-template-columns: 1fr;

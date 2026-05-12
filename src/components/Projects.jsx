@@ -11,6 +11,9 @@ import art1 from '../Asset/Art/Cyberpunk Cube Abstract - Glitch Aesthetic Digita
 import art2 from '../Asset/Art/Mysterious Abstract Terrain - Sci-Fi Moody Landscape Art.jpeg';
 import art3 from '../Asset/Art/Serene Green & White Abstract Sphere Art - Organic Digital Design.jpeg';
 
+import audio1 from '../Asset/Music/lofi_G_3.mp3';
+import audio2 from '../Asset/Music/try_H_4.mp3';
+
 const programmingProjects = {
   web: [
     {
@@ -71,12 +74,14 @@ const soundProjects = [
   {
     title: "Lofi Beats - Track 3",
     description: "Atmospheric lofi production created in FL Studio.",
-    tags: ["FL Studio", "Lofi"]
+    tags: ["FL Studio", "Lofi"],
+    audio: audio1
   },
   {
     title: "Creative Soundscape - Track 4",
     description: "Experimental sound design project exploring unique textures.",
-    tags: ["FL Studio", "Sound Design"]
+    tags: ["FL Studio", "Sound Design"],
+    audio: audio2
   }
 ];
 
@@ -142,11 +147,14 @@ const Projects = () => {
                       <span key={i} className="tag">{tag}</span>
                     ))}
                   </div>
-                  <div className="audio-placeholder">
+                  <div className="audio-player-wrapper">
                     <div className="audio-wave">
                       <span></span><span></span><span></span><span></span><span></span>
                     </div>
-                    <p>FL Studio Production</p>
+                    <audio controls className="custom-audio">
+                      <source src={project.audio} type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
                   </div>
                 </div>
               </div>
