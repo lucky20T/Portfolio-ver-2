@@ -35,7 +35,7 @@ const projects = [
     title: "Portfolio Website",
     category: "Web Application",
     description: "Built a personal portfolio website showcasing projects, skills, and my development journey.",
-    link: "https://lucky20t.github.io/lucky20T/Protfolio3.html",
+    link: "https://lucky20t.github.io/Portfolio-ver-1/Protfolio3.html",
     image: portfolioV1Img,
     tags: ["HTML/CSS", "JavaScript", "Vibe Coding"]
   },
