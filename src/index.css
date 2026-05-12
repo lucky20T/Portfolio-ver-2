@@ -600,8 +600,13 @@ img {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.sub-header-with-link .sub-title {
+.sub-header-with-link .sub-title, .sub-header-with-link .section-title {
   margin-bottom: 0;
+}
+.external-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 .gdd-link {
   display: flex;

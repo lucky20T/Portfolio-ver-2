@@ -125,7 +125,17 @@ const Projects = () => {
 
         {/* SECTION 2: ARTS */}
         <div className="main-category" style={{marginTop: '100px'}}>
-          <h2 className="section-title">Digital Art & <span className="gradient-text">3D Design</span></h2>
+          <div className="sub-header-with-link">
+            <h2 className="section-title">Digital Art & <span className="gradient-text">3D Design</span></h2>
+            <div className="external-links">
+              <a href="https://in.pinterest.com/vishalchakradhari6/" target="_blank" rel="noopener noreferrer" className="gdd-link">
+                Pinterest
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="gdd-link">
+                ArtStation
+              </a>
+            </div>
+          </div>
           <div className="projects-grid">
             {artProjects.map((project, index) => (
               <ProjectCard key={index} project={project} />
@@ -135,7 +145,12 @@ const Projects = () => {
 
         {/* SECTION 3: SOUND DESIGN */}
         <div className="main-category" style={{marginTop: '100px'}}>
-          <h2 className="section-title">Sound Design & <span className="gradient-text">Music</span></h2>
+          <div className="sub-header-with-link">
+            <h2 className="section-title">Sound Design & <span className="gradient-text">Music</span></h2>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="gdd-link">
+              Find more on Spotify
+            </a>
+          </div>
           <div className="projects-grid">
             {soundProjects.map((project, index) => (
               <div key={index} className="project-card glass-card sound-card">
