@@ -23,15 +23,24 @@ const Contact = () => {
             </div>
           </div>
           
-          <form className="contact-form" onSubmit={(e) => e.preventDefault()} data-aos="fade-left" data-aos-delay="200">
+          <form 
+            className="contact-form" 
+            action="https://formsubmit.co/vishalchakradhari2025@gmail.com" 
+            method="POST"
+            data-aos="fade-left" 
+            data-aos-delay="200"
+          >
+            {/* Disable FormSubmit captcha for smoother UX */}
+            <input type="hidden" name="_captcha" value="false" />
+            
             <div className="form-group">
-              <input type="text" placeholder="Full Name" />
+              <input type="text" name="name" placeholder="Full Name" required />
             </div>
             <div className="form-group">
-              <input type="email" placeholder="Email Address" />
+              <input type="email" name="email" placeholder="Email Address" required />
             </div>
             <div className="form-group">
-              <textarea placeholder="Your Message" rows="5"></textarea>
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             </div>
             <button type="submit" className="btn btn-primary">Send Message</button>
           </form>
