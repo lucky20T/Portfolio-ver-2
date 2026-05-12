@@ -630,4 +630,8 @@ img {
     gap: 3rem;
     justify-content: space-between;
   }
+  .sub-header-with-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

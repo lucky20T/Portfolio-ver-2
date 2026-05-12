@@ -6,86 +6,182 @@ import abstractImg from '../Asset/Art/Mysterious Abstract Terrain - Sci-Fi Moody
 import propic from '../Asset/propic/MainPropic.png';
 import portfolioV1Img from '../Asset/Project/Portfolio-ver-1Protfolio.png';
 
-const projects = [
+// Art Assets
+import art1 from '../Asset/Art/Cyberpunk Cube Abstract - Glitch Aesthetic Digital Art Print.jpeg';
+import art2 from '../Asset/Art/Mysterious Abstract Terrain - Sci-Fi Moody Landscape Art.jpeg';
+import art3 from '../Asset/Art/Serene Green & White Abstract Sphere Art - Organic Digital Design.jpeg';
+
+const programmingProjects = {
+  web: [
+    {
+      title: "Streak Forge",
+      description: "Built a productivity and habit-tracking web application focused on clean UI and interactive tracking systems.",
+      link: "https://streak-forge-omega.vercel.app/",
+      image: streakForgeImg,
+      tags: ["React", "Component-Based", "Responsive"]
+    },
+    {
+      title: "Portfolio Website (Old Version)",
+      description: "Built a personal portfolio website showcasing projects, skills, and my development journey.",
+      link: "https://lucky20t.github.io/Portfolio-ver-1/Protfolio3.html",
+      image: portfolioV1Img,
+      tags: ["HTML/CSS", "JavaScript", "Vibe Coding"]
+    }
+  ],
+  game: [
+    {
+      title: "Platforming Knight",
+      description: "My first game project built in Godot. Features 2D platforming mechanics, combat systems, and custom level design.",
+      link: "#",
+      image: platformerImg,
+      tags: ["Godot", "GDScript", "2D Platformer"]
+    },
+    {
+      title: "Math Puzzle Game",
+      description: "Built a React-based math puzzle game using vibe coding workflows. Designed responsive UI and interactive puzzle mechanics.",
+      link: "https://kid-math-puzzle.vercel.app/",
+      image: mathPuzzleImg,
+      tags: ["React", "UI/UX", "Vibe Coding"]
+    }
+  ]
+};
+
+const artProjects = [
   {
-    title: "Platforming Knight",
-    category: "Game Dev",
-    description: "My first game project built in Godot. Features 2D platforming mechanics, combat systems, and custom level design.",
-    link: "#",
-    image: platformerImg,
-    tags: ["Godot", "GDScript", "2D Platformer"]
+    title: "Cyberpunk Cube",
+    description: "Abstract glitch aesthetic digital art print exploring geometric forms.",
+    image: art1,
+    tags: ["Digital Art", "Abstract"]
   },
   {
-    title: "Math Puzzle Game",
-    category: "Game Dev",
-    description: "Built a React-based math puzzle game using vibe coding workflows. Designed responsive UI and interactive puzzle mechanics.",
-    link: "https://kid-math-puzzle.vercel.app/",
-    image: mathPuzzleImg,
-    tags: ["React", "UI/UX", "Vibe Coding"]
+    title: "Mysterious Terrain",
+    description: "Sci-Fi moody landscape art focusing on atmosphere and lighting.",
+    image: art2,
+    tags: ["3D Environment", "Sci-Fi"]
   },
   {
-    title: "Streak Forge",
-    category: "Web Application",
-    description: "Built a productivity and habit-tracking web application focused on clean UI and interactive tracking systems.",
-    link: "https://streak-forge-omega.vercel.app/",
-    image: streakForgeImg,
-    tags: ["React", "Component-Based", "Responsive"]
-  },
-  {
-    title: "Portfolio Website (Old Version)",
-    category: "Web Application",
-    description: "Built a personal portfolio website showcasing projects, skills, and my development journey.",
-    link: "https://lucky20t.github.io/Portfolio-ver-1/Protfolio3.html",
-    image: portfolioV1Img,
-    tags: ["HTML/CSS", "JavaScript", "Vibe Coding"]
-  },
-  {
-    title: "3D Environment Experiments",
-    category: "3D Art & Design",
-    description: "Created 3D models and environment experiments using Blender. Practiced lighting, scene composition, and environment workflows.",
-    link: "#",
-    image: abstractImg,
-    tags: ["Blender", "3D Modeling", "Lighting"]
+    title: "Organic Sphere",
+    description: "Serene abstract organic digital design focusing on flow and balance.",
+    image: art3,
+    tags: ["Organic", "Abstract"]
   }
 ];
+
+const soundProjects = [
+  {
+    title: "Lofi Beats - Track 3",
+    description: "Atmospheric lofi production created in FL Studio.",
+    tags: ["FL Studio", "Lofi"]
+  },
+  {
+    title: "Creative Soundscape - Track 4",
+    description: "Experimental sound design project exploring unique textures.",
+    tags: ["FL Studio", "Sound Design"]
+  }
+];
+
+const gddLink = "https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy8yMThCNzdEMzQ4QTAxMDMzL0lnQVVvdDU4ZEhnY1FwaWpTeF9lX2JhMEFXazRSd1pZRnZjQnU1RE90WUdVZmxZP2U9VDlPTmFs&id=218B77D348A01033%21s7cdea2147874421c98a34b1fdefdb6b4&cid=218B77D348A01033";
 
 const Projects = () => {
   return (
     <section id="projects" className="section projects-section">
       <div className="container">
-        <div className="section-header">
-          <h2 className="section-title">Selected <span className="gradient-text">Projects</span></h2>
-          <p className="section-subtitle">A glimpse into my creative and technical workspace.</p>
+        
+        {/* SECTION 1: PROGRAMMING */}
+        <div className="main-category">
+          <h2 className="section-title">Programming <span className="gradient-text">Projects</span></h2>
+          
+          {/* Web Development Sub-section */}
+          <div className="sub-category">
+            <h3 className="sub-title">Web Development</h3>
+            <div className="projects-grid">
+              {programmingProjects.web.map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+            </div>
+          </div>
+
+          {/* Game Development Sub-section */}
+          <div className="sub-category">
+            <div className="sub-header-with-link">
+              <h3 className="sub-title">Game Development</h3>
+              <a href={gddLink} target="_blank" rel="noopener noreferrer" className="gdd-link">
+                View GDD Collection 
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+            <div className="projects-grid">
+              {programmingProjects.game.map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+            </div>
+          </div>
         </div>
 
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card glass-card">
-              <div className="project-img-wrapper">
-                <img src={project.image} alt={project.title} className="project-img" />
-              </div>
-              <div className="project-info">
-                <div className="project-header">
-                  <span className="project-category">{project.category}</span>
-                  <h3 className="project-title">{project.title}</h3>
-                </div>
-                <p className="project-desc">{project.description}</p>
-                <div className="project-tags">
-                  {project.tags.map((tag, i) => (
-                    <span key={i} className="tag">{tag}</span>
-                  ))}
-                </div>
-                <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
-                  View Project 
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                </a>
-              </div>
-            </div>
-          ))}
+        {/* SECTION 2: ARTS */}
+        <div className="main-category" style={{marginTop: '100px'}}>
+          <h2 className="section-title">Digital Art & <span className="gradient-text">3D Design</span></h2>
+          <div className="projects-grid">
+            {artProjects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
         </div>
+
+        {/* SECTION 3: SOUND DESIGN */}
+        <div className="main-category" style={{marginTop: '100px'}}>
+          <h2 className="section-title">Sound Design & <span className="gradient-text">Music</span></h2>
+          <div className="projects-grid">
+            {soundProjects.map((project, index) => (
+              <div key={index} className="project-card glass-card sound-card">
+                <div className="project-info">
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-desc">{project.description}</p>
+                  <div className="project-tags">
+                    {project.tags.map((tag, i) => (
+                      <span key={i} className="tag">{tag}</span>
+                    ))}
+                  </div>
+                  <div className="audio-placeholder">
+                    <div className="audio-wave">
+                      <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <p>FL Studio Production</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );
 };
+
+const ProjectCard = ({ project }) => (
+  <div className="project-card glass-card">
+    {project.image && (
+      <div className="project-img-wrapper">
+        <img src={project.image} alt={project.title} className="project-img" />
+      </div>
+    )}
+    <div className="project-info">
+      <h3 className="project-title">{project.title}</h3>
+      <p className="project-desc">{project.description}</p>
+      <div className="project-tags">
+        {project.tags.map((tag, i) => (
+          <span key={i} className="tag">{tag}</span>
+        ))}
+      </div>
+      {project.link && project.link !== "#" && (
+        <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
+          View Project 
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      )}
+    </div>
+  </div>
+);
 
 export default Projects;
