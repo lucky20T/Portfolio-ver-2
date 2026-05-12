@@ -17,9 +17,24 @@ const About = () => {
             <p className="about-text">
               <strong>Objective:</strong> I am an aspiring Game Developer focused on <strong>Unreal Engine, C++</strong>, and interactive gameplay systems. Passionate about building game projects, improving technical skills, and combining creativity with problem-solving through hands-on development.
             </p>
-            <p className="about-text">
-              <strong>Education:</strong> I am currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering at SAGE University, Indore (2024 – Present).
-            </p>
+            <div className="education-section" style={{marginTop: '2rem', marginBottom: '1.5rem'}}>
+              <h3 style={{color: 'var(--accent-primary)', marginBottom: '1rem', fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px'}}>Education</h3>
+              
+              <div className="edu-item" style={{marginBottom: '1rem'}}>
+                <h4 style={{fontSize: '1.1rem', color: 'var(--text-primary)'}}>Bachelor of Technology (B.Tech), Computer Science</h4>
+                <p style={{color: 'var(--text-secondary)', fontSize: '0.9rem'}}>SAGE University, Indore • 2024 – Present</p>
+              </div>
+
+              <div className="edu-item" style={{marginBottom: '1rem'}}>
+                <h4 style={{fontSize: '1.1rem', color: 'var(--text-primary)'}}>Class 12th (CBSE)</h4>
+                <p style={{color: 'var(--text-secondary)', fontSize: '0.9rem'}}>Kendriya Vidyalaya • 2024</p>
+              </div>
+
+              <div className="edu-item">
+                <h4 style={{fontSize: '1.1rem', color: 'var(--text-primary)'}}>Class 10th (CBSE)</h4>
+                <p style={{color: 'var(--text-secondary)', fontSize: '0.9rem'}}>Kendriya Vidyalaya • 2022</p>
+              </div>
+            </div>
             <p className="about-text">
               <strong>Interests & Extracurriculars:</strong> Beyond coding, I am deeply involved in 3D Environment Design, Sketching, Concept Art, Chess, Learning Japanese, and exploring Indie Games and Creative Projects.
             </p>
