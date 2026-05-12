@@ -93,7 +93,7 @@ const Projects = () => {
       <div className="container">
         
         {/* SECTION 1: PROGRAMMING */}
-        <div className="main-category">
+        <div className="main-category" data-aos="fade-up">
           <h2 className="section-title">Programming <span className="gradient-text">Projects</span></h2>
           
           {/* Game Development Sub-section */}
@@ -124,7 +124,7 @@ const Projects = () => {
         </div>
 
         {/* SECTION 2: ARTS */}
-        <div className="main-category" style={{marginTop: '100px'}}>
+        <div className="main-category" style={{marginTop: '100px'}} data-aos="fade-up">
           <div className="sub-header-with-link">
             <h2 className="section-title">Digital Art & <span className="gradient-text">3D Design</span></h2>
             <div className="external-links">
@@ -144,7 +144,7 @@ const Projects = () => {
         </div>
 
         {/* SECTION 3: SOUND DESIGN */}
-        <div className="main-category" style={{marginTop: '100px'}}>
+        <div className="main-category" style={{marginTop: '100px'}} data-aos="fade-up">
           <div className="sub-header-with-link">
             <h2 className="section-title">Sound Design & <span className="gradient-text">Music</span></h2>
             <a href="#" target="_blank" rel="noopener noreferrer" className="gdd-link">
@@ -153,7 +153,7 @@ const Projects = () => {
           </div>
           <div className="projects-grid">
             {soundProjects.map((project, index) => (
-              <div key={index} className="project-card glass-card sound-card">
+              <div key={index} className="project-card glass-card sound-card" data-aos="fade-up" data-aos-delay={index * 100}>
                 <div className="project-info">
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-desc">{project.description}</p>
@@ -183,7 +183,7 @@ const Projects = () => {
 };
 
 const ProjectCard = ({ project }) => (
-  <div className="project-card glass-card">
+  <div className="project-card glass-card" data-aos="fade-up">
     {project.image && (
       <div className="project-img-wrapper">
         <img src={project.image} alt={project.title} className="project-img" />

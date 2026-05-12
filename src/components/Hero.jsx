@@ -10,16 +10,16 @@ const Hero = () => {
       
       <div className="container hero-container">
         <div className="hero-content">
-          <h4 className="hero-subtitle">Aspiring Game Developer • Unreal Engine • C++</h4>
-          <h1 className="hero-title">
+          <h4 className="hero-subtitle" data-aos="fade-up">Aspiring Game Developer • Unreal Engine • C++</h4>
+          <h1 className="hero-title" data-aos="fade-up" data-aos-delay="100">
             Building Worlds <br />
             <span className="gradient-text">One Frame</span> At A Time
           </h1>
-          <p className="hero-description">
+          <p className="hero-description" data-aos="fade-up" data-aos-delay="200">
             B.Tech Computer Science student building gameplay systems, 
             immersive prototypes, and real-world projects — one commit at a time.
           </p>
-          <div className="hero-btns" style={{flexWrap: 'wrap'}}>
+          <div className="hero-btns" style={{flexWrap: 'wrap'}} data-aos="fade-up" data-aos-delay="300">
             <a href="#projects" className="btn btn-primary">View Projects</a>
             <a href={resumePdf} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
               <span style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
@@ -30,7 +30,7 @@ const Hero = () => {
             <a href="#contact" className="btn btn-outline">Let's Collaborate</a>
           </div>
         </div>
-        <div className="hero-visual">
+        <div className="hero-visual" data-aos="zoom-in" data-aos-delay="200">
           <div className="abstract-card glass-card">
             <img src={abstractImg} alt="Abstract Art" className="hero-abstract-img" />
           </div>

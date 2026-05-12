@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <section id="contact" className="section contact-section">
       <div className="container">
-        <div className="contact-card glass-card">
-          <div className="contact-info">
+        <div className="contact-card glass-card" data-aos="fade-up">
+          <div className="contact-info" data-aos="fade-right" data-aos-delay="100">
             <h2 className="section-title">Let's Create <br /><span className="gradient-text">Something Great</span></h2>
             <p className="contact-desc">
               Have a project in mind? Or just want to say hi? 
@@ -23,7 +23,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+          <form className="contact-form" onSubmit={(e) => e.preventDefault()} data-aos="fade-left" data-aos-delay="200">
             <div className="form-group">
               <input type="text" placeholder="Full Name" />
             </div>

@@ -23,13 +23,13 @@ const Skills = () => {
   return (
     <section id="skills" className="section skills-section">
       <div className="container">
-        <h2 className="section-title" style={{textAlign: 'center', marginBottom: '4rem'}}>
+        <h2 className="section-title" style={{textAlign: 'center', marginBottom: '4rem'}} data-aos="fade-up">
           Technical <span className="gradient-text">Toolkit</span>
         </h2>
         
         <div className="skills-grid">
           {skills.map((skillGroup, index) => (
-            <div key={index} className="skill-category glass-card">
+            <div key={index} className="skill-category glass-card" data-aos="fade-up" data-aos-delay={index * 100}>
               <h3 className="skill-group-name">{skillGroup.name}</h3>
               <div className="skill-items">
                 {skillGroup.items.map((skill, i) => (

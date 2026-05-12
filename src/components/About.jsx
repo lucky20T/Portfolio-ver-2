@@ -6,13 +6,13 @@ const About = () => {
     <section id="about" className="section about-section">
       <div className="container">
         <div className="about-grid">
-          <div className="about-image">
+          <div className="about-image" data-aos="fade-right">
             <div className="image-wrapper">
               <img src={propic} alt="Vishal" className="profile-img" />
               <div className="image-border"></div>
             </div>
           </div>
-          <div className="about-content">
+          <div className="about-content" data-aos="fade-left">
             <h2 className="section-title">My <span className="gradient-text">Journey</span></h2>
             <p className="about-text">
               <strong>Objective:</strong> I am an aspiring Game Developer focused on <strong>Unreal Engine, C++</strong>, and interactive gameplay systems. Passionate about building game projects, improving technical skills, and combining creativity with problem-solving through hands-on development.
@@ -40,15 +40,15 @@ const About = () => {
             </p>
             
             <div className="stats-grid">
-              <div className="stat-card glass-card">
+              <div className="stat-card glass-card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Intern</h3>
                 <p>Experience</p>
               </div>
-              <div className="stat-card glass-card">
+              <div className="stat-card glass-card" data-aos="fade-up" data-aos-delay="200">
                 <h3>5+</h3>
                 <p>Projects</p>
               </div>
-              <div className="stat-card glass-card">
+              <div className="stat-card glass-card" data-aos="fade-up" data-aos-delay="300">
                 <h3>100%</h3>
                 <p>Game Dev Focus</p>
               </div>
