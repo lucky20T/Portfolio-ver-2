@@ -2,16 +2,20 @@ import React from 'react';
 
 const skills = [
   { 
+    name: "Programming", 
+    items: ["C++", "Python (Basic)", "React"] 
+  },
+  { 
     name: "Game Development", 
-    items: ["C++", "Unreal Engine", "Blender", "FL Studio"] 
+    items: ["Unreal Engine (Blueprints, Gameplay)", "Godot (Basics)"] 
   },
   { 
-    name: "Web Technologies", 
-    items: ["React", "Vite", "JavaScript", "HTML5", "CSS3"] 
+    name: "3D & Creative Tools", 
+    items: ["Blender (2D & 3D Modeling)", "FL Studio (Basics)", "Sketching"] 
   },
-  { 
-    name: "Design & Creative", 
-    items: ["UI/UX Design", "Vibe Coding", "Git", "GitHub"] 
+  {
+    name: "Other Skills",
+    items: ["Problem Solving", "Game Logic Design", "Basic UI Development", "Content Creation"]
   }
 ];
 

@@ -14,11 +14,11 @@ const Contact = () => {
             <div className="contact-details">
               <div className="detail-item">
                 <span className="detail-label">Email</span>
-                <p>vishal@example.com</p>
+                <p>vishalchakradhari2025@gmail.com</p>
               </div>
               <div className="detail-item">
-                <span className="detail-label">Location</span>
-                <p>India, Earth</p>
+                <span className="detail-label">Phone</span>
+                <p>+91 9174218274</p>
               </div>
             </div>
           </div>

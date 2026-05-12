@@ -2,31 +2,40 @@ import React from 'react';
 import streakForgeImg from '../Asset/Project/streak-forge.png';
 import platformerImg from '../Asset/Project/Platformaning_knight_Game_Play.png';
 import mathPuzzleImg from '../Asset/Project/kid-math-puzzle_Game_Play.png';
+import abstractImg from '../Asset/Art/Mysterious Abstract Terrain - Sci-Fi Moody Landscape Art.jpeg';
 
 const projects = [
   {
+    title: "Math Puzzle Game",
+    category: "Game Dev",
+    description: "Built a React-based math puzzle game using vibe coding workflows. Designed responsive UI and interactive puzzle mechanics.",
+    link: "https://kid-math-puzzle.vercel.app/",
+    image: mathPuzzleImg,
+    tags: ["React", "UI/UX", "Vibe Coding"]
+  },
+  {
+    title: "Portfolio Website",
+    category: "Web Application",
+    description: "Built a personal portfolio website showcasing projects, skills, and my development journey.",
+    link: "https://lucky20t.github.io/lucky20T/Protfolio3.html",
+    image: platformerImg, // using as placeholder
+    tags: ["HTML/CSS", "JavaScript", "Vibe Coding"]
+  },
+  {
     title: "Streak Forge",
     category: "Web Application",
-    description: "A productivity tool for habit tracking with real-time sync and data visualization.",
+    description: "Built a productivity and habit-tracking web application focused on clean UI and interactive tracking systems.",
     link: "https://streak-forge-omega.vercel.app/",
     image: streakForgeImg,
-    tags: ["React", "Cloud Sync", "UX Design"]
+    tags: ["React", "Component-Based", "Responsive"]
   },
   {
-    title: "Platforming Knight",
-    category: "Game Dev",
-    description: "An action-packed 2D platformer with complex mechanics and immersive levels.",
+    title: "3D Environment Experiments",
+    category: "3D Art & Design",
+    description: "Created 3D models and environment experiments using Blender. Practiced lighting, scene composition, and environment workflows.",
     link: "#",
-    image: platformerImg,
-    tags: ["C#", "Unity", "Game Design"]
-  },
-  {
-    title: "Kid Math Puzzle",
-    category: "Educational Game",
-    description: "An interactive puzzle game designed to make learning math fun for children.",
-    link: "#",
-    image: mathPuzzleImg,
-    tags: ["JavaScript", "Game Dev", "Logic"]
+    image: abstractImg,
+    tags: ["Blender", "3D Modeling", "Lighting"]
   }
 ];
 

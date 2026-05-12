@@ -15,18 +15,13 @@ const About = () => {
           <div className="about-content">
             <h2 className="section-title">My <span className="gradient-text">Journey</span></h2>
             <p className="about-text">
-              I'm a multi-disciplinary creator with a singular vision: to become a world-class Game Developer. 
-              My expertise spans across <strong>C++</strong> and <strong>Unreal Engine</strong>, where I build the core mechanics of interactive experiences.
+              <strong>Objective:</strong> I am an aspiring Game Developer focused on <strong>Unreal Engine, C++</strong>, and interactive gameplay systems. Passionate about building game projects, improving technical skills, and combining creativity with problem-solving through hands-on development.
             </p>
             <p className="about-text">
-              To bring my worlds to life, I leverage <strong>Blender</strong> for 3D modeling and <strong>FL Studio</strong> for immersive soundscapes. 
-              My background in web development (React, JavaScript) allows me to bridge the gap between 
-              interactive apps and high-fidelity gaming.
+              <strong>Education:</strong> I am currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering at SAGE University, Indore (2024 – Present).
             </p>
             <p className="about-text">
-              I believe in "vibe coding"—the art of creating software that feels alive, intuitive, and 
-              aesthetically pleasing. Every line of code I write is a step toward building the next 
-              great digital adventure.
+              <strong>Interests & Extracurriculars:</strong> Beyond coding, I am deeply involved in 3D Environment Design, Sketching, Concept Art, Chess, Learning Japanese, and exploring Indie Games and Creative Projects.
             </p>
             
             <div className="stats-grid">
