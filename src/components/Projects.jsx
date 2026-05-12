@@ -3,8 +3,8 @@ import streakForgeImg from '../Asset/Project/streak-forge.png';
 import platformerImg from '../Asset/Project/Platformaning_knight_Game_Play.png';
 import mathPuzzleImg from '../Asset/Project/kid-math-puzzle_Game_Play.png';
 import abstractImg from '../Asset/Art/Mysterious Abstract Terrain - Sci-Fi Moody Landscape Art.jpeg';
-
 import propic from '../Asset/propic/MainPropic.png';
+import portfolioV1Img from '../Asset/Project/Portfolio-ver-1Protfolio.png';
 
 const projects = [
   {
@@ -36,7 +36,7 @@ const projects = [
     category: "Web Application",
     description: "Built a personal portfolio website showcasing projects, skills, and my development journey.",
     link: "https://lucky20t.github.io/lucky20T/Protfolio3.html",
-    image: propic,
+    image: portfolioV1Img,
     tags: ["HTML/CSS", "JavaScript", "Vibe Coding"]
   },
   {
