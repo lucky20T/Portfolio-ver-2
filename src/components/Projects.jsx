@@ -96,16 +96,6 @@ const Projects = () => {
         <div className="main-category">
           <h2 className="section-title">Programming <span className="gradient-text">Projects</span></h2>
           
-          {/* Web Development Sub-section */}
-          <div className="sub-category">
-            <h3 className="sub-title">Web Development</h3>
-            <div className="projects-grid">
-              {programmingProjects.web.map((project, index) => (
-                <ProjectCard key={index} project={project} />
-              ))}
-            </div>
-          </div>
-
           {/* Game Development Sub-section */}
           <div className="sub-category">
             <div className="sub-header-with-link">
@@ -117,6 +107,16 @@ const Projects = () => {
             </div>
             <div className="projects-grid">
               {programmingProjects.game.map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+            </div>
+          </div>
+
+          {/* Web Development Sub-section */}
+          <div className="sub-category">
+            <h3 className="sub-title">Web Development</h3>
+            <div className="projects-grid">
+              {programmingProjects.web.map((project, index) => (
                 <ProjectCard key={index} project={project} />
               ))}
             </div>
