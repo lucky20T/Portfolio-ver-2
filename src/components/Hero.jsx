@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import abstractImg from '../Asset/Art/Mysterious Abstract Terrain - Sci-Fi Moody Landscape Art.jpeg';
 import resumePdf from '../Asset/Resume.pdf';
 
-const Hero = () => {
+const Hero = ({ onOpenContact }) => {
   return (
     <section id="hero" className="section hero-section">
       <div className="bg-blob blob-1"></div>
@@ -42,7 +42,7 @@ const Hero = () => {
                 Resume
               </span>
             </a>
-            <a href="#contact" className="btn btn-outline">Let's Collaborate</a>
+            <button onClick={onOpenContact} className="btn btn-outline">Let's Collaborate</button>
           </div>
         </div>
         <div className="hero-visual" data-aos="zoom-in" data-aos-delay="200">

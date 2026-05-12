@@ -1,11 +1,16 @@
 import React from 'react';
 
-const Contact = () => {
+const Contact = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+
   return (
-    <section id="contact" className="section contact-section">
-      <div className="container">
-        <div className="contact-card glass-card" data-aos="fade-up">
-          <div className="contact-info" data-aos="fade-right" data-aos-delay="100">
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content-wrapper" onClick={(e) => e.stopPropagation()}>
+        <button onClick={onClose} className="modal-close-btn">
+          ✕
+        </button>
+        <div className="contact-card glass-card" style={{margin: 0, boxShadow: '0 0 50px rgba(0,0,0,0.5)'}}>
+          <div className="contact-info">
             <h2 className="section-title">Let's Create <br /><span className="gradient-text">Something Great</span></h2>
             <p className="contact-desc">
               Have a project in mind? Or just want to say hi? 
@@ -27,8 +32,6 @@ const Contact = () => {
             className="contact-form" 
             action="https://formsubmit.co/vishalchakradhari2025@gmail.com" 
             method="POST"
-            data-aos="fade-left" 
-            data-aos-delay="200"
           >
             {/* Disable FormSubmit captcha for smoother UX */}
             <input type="hidden" name="_captcha" value="false" />
@@ -46,7 +49,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

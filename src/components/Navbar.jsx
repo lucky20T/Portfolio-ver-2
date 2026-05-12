@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ onOpenContact }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,9 +21,9 @@ const Navbar = () => {
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><button onClick={onOpenContact} style={{background: 'none', border: 'none', cursor: 'pointer', fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-secondary)'}}>Contact</button></li>
         </ul>
-        <a href="#contact" className="btn btn-outline nav-btn">Hire Me</a>
+        <button onClick={onOpenContact} className="btn btn-outline nav-btn">Hire Me</button>
       </div>
     </nav>
   );
