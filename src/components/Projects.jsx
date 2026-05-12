@@ -4,7 +4,17 @@ import platformerImg from '../Asset/Project/Platformaning_knight_Game_Play.png';
 import mathPuzzleImg from '../Asset/Project/kid-math-puzzle_Game_Play.png';
 import abstractImg from '../Asset/Art/Mysterious Abstract Terrain - Sci-Fi Moody Landscape Art.jpeg';
 
+import propic from '../Asset/propic/MainPropic.png';
+
 const projects = [
+  {
+    title: "Platforming Knight",
+    category: "Game Dev",
+    description: "My first game project built in Godot. Features 2D platforming mechanics, combat systems, and custom level design.",
+    link: "#",
+    image: platformerImg,
+    tags: ["Godot", "GDScript", "2D Platformer"]
+  },
   {
     title: "Math Puzzle Game",
     category: "Game Dev",
@@ -14,20 +24,20 @@ const projects = [
     tags: ["React", "UI/UX", "Vibe Coding"]
   },
   {
-    title: "Portfolio Website",
-    category: "Web Application",
-    description: "Built a personal portfolio website showcasing projects, skills, and my development journey.",
-    link: "https://lucky20t.github.io/lucky20T/Protfolio3.html",
-    image: platformerImg, // using as placeholder
-    tags: ["HTML/CSS", "JavaScript", "Vibe Coding"]
-  },
-  {
     title: "Streak Forge",
     category: "Web Application",
     description: "Built a productivity and habit-tracking web application focused on clean UI and interactive tracking systems.",
     link: "https://streak-forge-omega.vercel.app/",
     image: streakForgeImg,
     tags: ["React", "Component-Based", "Responsive"]
+  },
+  {
+    title: "Portfolio Website",
+    category: "Web Application",
+    description: "Built a personal portfolio website showcasing projects, skills, and my development journey.",
+    link: "https://lucky20t.github.io/lucky20T/Protfolio3.html",
+    image: propic,
+    tags: ["HTML/CSS", "JavaScript", "Vibe Coding"]
   },
   {
     title: "3D Environment Experiments",
