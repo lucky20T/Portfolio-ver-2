@@ -32,7 +32,7 @@ const projects = [
     tags: ["React", "Component-Based", "Responsive"]
   },
   {
-    title: "Portfolio Website",
+    title: "Portfolio Website (Old Version)",
     category: "Web Application",
     description: "Built a personal portfolio website showcasing projects, skills, and my development journey.",
     link: "https://lucky20t.github.io/Portfolio-ver-1/Protfolio3.html",
