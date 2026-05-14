@@ -15,7 +15,7 @@ const Navbar = ({ onOpenContact }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <div className="logo">
-          <span className="gradient-text">VISHAL</span>
+          <span className="gradient-text">VISHAL CHAKRADHARI</span>
         </div>
         <ul className="nav-links">
           <li><a href="#hero">Home</a></li>
