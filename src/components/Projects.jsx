@@ -44,6 +44,7 @@ const programmingProjects = {
       title: "Math Puzzle Game",
       description: "Built a React-based math puzzle game using vibe coding workflows. Designed responsive UI and interactive puzzle mechanics.",
       link: "https://kid-math-puzzle.vercel.app/",
+      github: "https://github.com/lucky20T/kid-math-puzzle",
       image: mathPuzzleImg,
       tags: ["React", "UI/UX", "Vibe Coding"]
     }
