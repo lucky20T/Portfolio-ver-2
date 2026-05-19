@@ -476,6 +476,11 @@ img {
   font-size: 0.8rem;
   border: 1px solid var(--glass-border);
 }
+.project-actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: auto;
+}
 .project-link {
   display: flex;
   align-items: center;
@@ -483,7 +488,6 @@ img {
   font-weight: 600;
   color: var(--text-primary);
   transition: var(--transition);
-  margin-top: auto;
 }
 .project-link:hover {
   color: var(--accent-primary);
