@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <span className="gradient-text">VISHAL</span>
+            <span className="gradient-text">VISHAL CHAKRADHARI</span>
             <p>Aspiring Game Developer crafting immersive digital worlds.</p>
           </div>
           <div className="footer-links">

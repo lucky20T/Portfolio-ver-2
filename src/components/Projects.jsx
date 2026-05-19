@@ -134,7 +134,7 @@ const Projects = () => {
               <a href="https://in.pinterest.com/vishalchakradhari6/" target="_blank" rel="noopener noreferrer" className="gdd-link">
                 Pinterest
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="gdd-link">
+              <a href="https://www.artstation.com/" target="_blank" rel="noopener noreferrer" className="gdd-link">
                 ArtStation
               </a>
             </div>
@@ -150,7 +150,7 @@ const Projects = () => {
         <div className="main-category" style={{marginTop: '100px'}} data-aos="fade-up">
           <div className="sub-header-with-link">
             <h2 className="section-title">Sound Design & <span className="gradient-text">Music</span></h2>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="gdd-link">
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer" className="gdd-link">
               Find more on Spotify
             </a>
           </div>
