@@ -37,6 +37,7 @@ const programmingProjects = {
       title: "Platforming Knight",
       description: "My first game project built in Godot. Features 2D platforming mechanics, combat systems, and custom level design.",
       link: "https://lucky20t.github.io/first_try_GoDot/GoDot/index.html",
+      github: "https://github.com/lucky20T/first_try_GoDot",
       image: platformerImg,
       tags: ["Godot", "GDScript", "2D Platformer"]
     },
