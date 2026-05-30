@@ -3,6 +3,7 @@ import certUnreal from '../Asset/Certifications/CertificateOfCompletion_Unreal E
 import certCpp from '../Asset/Certifications/C--_Essentials_1_certificate.png';
 import certHackMadras from '../Asset/Certifications/Game_Trade_Hackathon_IIT_Madras.png';
 import certHackSprint from '../Asset/Certifications/Participation_Certificate_Hack-a-Sprint.jpg';
+import certEpicGameDesign from '../Asset/Certifications/Epic_Games_Game_Design_Introduction_to_Game_Design.png';
 
 const skills = [
   { 
@@ -29,6 +30,13 @@ const certifications = [
     issuer: "LinkedIn Learning",
     image: certUnreal,
     id: "8640f583ff56b16e13b968545d8af96131934cec586a21ced458efdb59fed0d8"
+  },
+  {
+    title: "Introduction to Game Design",
+    issuer: "Epic Games / Coursera",
+    image: certEpicGameDesign,
+    id: "U4HXT0DPWE81",
+    verify: "https://www.coursera.org/account/accomplishments/verify/U4HXT0DPWE81"
   },
   {
     title: "C++ Essentials 1",
@@ -92,6 +100,11 @@ const Skills = () => {
                       {cert.id}
                     </p>
                   </div>
+                )}
+                {cert.verify && (
+                  <a href={cert.verify} target="_blank" rel="noopener noreferrer" style={{ marginTop: '0.75rem', color: 'var(--accent-primary)', fontWeight: 700, textDecoration: 'none' }}>
+                    Verify Credential
+                  </a>
                 )}
               </div>
             </div>

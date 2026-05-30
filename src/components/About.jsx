@@ -38,7 +38,6 @@ const About = () => {
             <p className="about-text">
               <strong>Interests & Extracurriculars:</strong> Beyond coding, I am deeply involved in 3D Environment Design, Sketching, Concept Art, Chess, Learning Japanese, and exploring Indie Games and Creative Projects.
             </p>
-            
             <div className="stats-grid">
               <div className="stat-card glass-card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Intern</h3>
